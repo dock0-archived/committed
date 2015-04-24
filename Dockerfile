@@ -4,4 +4,4 @@ RUN pacman -S --noconfirm --needed ruby
 ADD source /opt/committed
 ADD run /service/committed/run
 RUN gem install --no-user-install bundler
-RUN bundle install --gemfile /opt/committed/Gemfile.lock
+RUN bundle install --gemfile /opt/committed/Gemfile
