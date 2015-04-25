@@ -1,6 +1,6 @@
 FROM dock0/service
 MAINTAINER akerl <me@lesaker.org>
-RUN pacman -S --noconfirm --needed ruby
+RUN pacman -S --noconfirm --needed ruby base-devel
 ADD source /opt/committed
 ADD run /service/committed/run
 RUN gem install --no-user-install bundler
