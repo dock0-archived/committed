@@ -5,3 +5,4 @@ ADD source /srv/app
 RUN gem install --no-user-install bundler
 RUN bundle install --gemfile /srv/app/Gemfile
 ENV PORT 80
+CMD ['foreman', 'run', '--root=/srv/app']
