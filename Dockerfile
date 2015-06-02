@@ -6,5 +6,3 @@ RUN gem install --no-user-install bundler
 RUN bundle install --gemfile /srv/app/Gemfile
 ENV PORT 80
 ENV TZ America/New_York
-ENV RACK_ENV production
-CMD ["foreman", "start", "--root=/srv/app"]
