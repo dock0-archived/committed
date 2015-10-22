@@ -1,0 +1,12 @@
+machine:
+  services:
+    - docker
+dependencies:
+  override:
+    - docker build -t test .
+test:
+  override:
+    - docker run -ti test /bin/true
+    - docker run -ti test /bin/bash --version
+    - docker run -d -p 1080:1080 test && sleep 5
+    - curl localhost:1080
