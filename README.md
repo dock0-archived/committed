@@ -1,3 +1,5 @@
+**Inactive Project:** I've stopped using this project in favor of running committed on Heroku
+
 dock0/committed
 =======
 
